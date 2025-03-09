@@ -1,0 +1,252 @@
+@font-face {
+    font-family: 'SpicyRice'; 
+    src: url('../fonts/Spicy_Rice/SpicyRice-Regular.ttf') format('truetype');
+}
+body {
+    scroll-behavior: smooth;
+}
+
+.navbar {
+    background-color: #343a40;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease;
+    transform: translateY(0);
+}
+
+.brand{
+    font-family: 'SpicyRice', sans-serif !important;
+    
+}
+
+.brand span{
+    color: #b0c7e4 !important;
+}
+
+.navbar.hidden {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-100%); 
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: white;
+}
+
+.nav-link {
+    position: relative; 
+    display: inline-block; 
+    padding-bottom: 5px; 
+}
+
+.nav-link::before {
+    content: '';
+    position: absolute;
+    width: 80%;
+    height: 4px;
+    border-radius: 4px;
+    background-color: #ffffff;
+    bottom: 0;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .3s ease-in-out;
+}
+
+.nav-link:hover::before {
+    transform-origin: center;
+    transform: scaleX(1);
+}
+
+.nav-link.active::before {
+    transform: scaleX(1);
+    transform-origin: center;
+}
+
+.section {
+    padding: 20px;
+}
+
+.home-section {
+    position: relative;
+    width: 100%;
+    height: 100vh; 
+    background-image: url('../images/plano-de-fundo.jpeg'); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+}
+
+.home-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+}
+
+.container {
+    position: relative;
+    z-index: 2; 
+}
+
+.social-divider {
+    width: 2%;
+    border-top: 2px solid #fff;
+    margin: 20px auto;
+    opacity: 0.7;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+}
+.social-icons .social-link{
+    font-size: 24px;
+}
+.social-link {
+    color: white;
+    transition: transform 0.3s ease, color 0.3s;
+}
+
+.social-link:hover {
+    transform: scale(1.2);
+    color: #00aced; 
+}
+
+.scroll-down {
+    position: absolute;
+    bottom: 50px; 
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 30px;
+    color: white;
+    text-decoration: none;
+    transition: transform 0.3s ease, color 0.3s;
+}
+
+.scroll-down:hover {
+    transform: translateX(-50%) translateY(5px); 
+    color: #00aced;
+}
+.container {
+    position: relative;
+    z-index: 2; 
+}
+
+.sobre {
+    min-height: 100vh;
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    text-align: left; 
+    padding: 20px; 
+}
+
+#sobre div{
+    flex-wrap: wrap;
+    padding: 0;
+}
+
+
+
+.sobre .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.img-box img {
+    width: 450px;
+    border-radius: 10px;
+}
+
+.text-box {
+    max-width: 600px;
+    margin-left: 10px;
+}
+
+.titulo {
+    font-size: 42px;
+    font-weight: bold;
+    color: #b0c7e4;
+}
+
+.descricao {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.tecnologias {
+    margin: 15px 0;
+}
+
+.tecnologias .badge {
+    font-size: 16px;
+    padding: 8px 12px;
+}
+
+.btn-primary {
+    background-color: #62b6cb;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #4c99a8;
+}
+
+
+#projetos{
+    min-height: 100svh;
+}
+
+#projetos .card-header {
+    height: 120px; 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+#contato {
+    background-color: #141414;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    min-height: 90vh;
+}
+
+textarea {
+    resize: none;
+}
+
+
+img {
+    width: 70%; 
+    height: auto; 
+  }
+
+  
+#typed-output {
+    min-height: 20px;
+    display: inline-block;
+    
+}
+
+.typed-cursor {
+    font-size: 24px;  
+
+
+}
+
+
+
+

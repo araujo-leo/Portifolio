@@ -54,5 +54,31 @@ document.addEventListener("DOMContentLoaded", function () {
     var typed = new Typed("#typed-output", options);
 });
 
+ScrollReveal().reveal('#sobre .img-box', {
+    duration: 1000, 
+    origin: 'top', 
+    distance: '50px', 
+    easing: 'ease-in-out', 
+    reset: false
+});
+
+ScrollReveal().reveal('#sobre .text-box', {
+    duration: 1000, 
+    origin: 'bottom', 
+    distance: '50px', 
+    easing: 'ease-in-out', 
+    delay: 300,
+    reset: false
+});
+
+//Reveal Projetos
+ScrollReveal().reveal('.card', {
+    duration: 1000, 
+    origin: 'bottom', 
+    distance: '50px', 
+    easing: 'ease-in-out', 
+    interval: 300, 
+    reset: false
+});
 
 

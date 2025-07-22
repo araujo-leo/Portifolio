@@ -2,202 +2,252 @@
 <html lang="pt-br">
 
 <head>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-	<link rel="stylesheet" href="vendor/fontawesome/css/all.css"/>
-	<link rel="stylesheet" href="assets/css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="vendor/fontawesome/css/all.css" />
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="icon" href="/assets/images/avatar.webp" type="image/webp">
+
+    <title>Leonardo Araujo - Desenvolvedor Backend</title>
 </head>
 
 <body>
 
-	<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-		<div class="container">
-			<a class="navbar-brand brand" href="">LEO <span>ARAUJO</span></a>
-			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-				<span class="navbar-toggler-icon"></span>
-			</button>
-			<div class="collapse navbar-collapse" id="navbarNav">
-				<ul class="navbar-nav ms-auto">
-					<li class="nav-item"> <a class="nav-link active" href="#home">Home</a> </li>
-					<li class="nav-item"> <a class="nav-link" href="#sobre">Sobre mim</a> </li>
-					<li class="nav-item"> <a class="nav-link" href="#projetos">Projetos</a> </li>
-					<li class="nav-item"> <a class="nav-link" href="#contato">Contato</a> </li>
-				</ul>
-			</div>
-		</div>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand brand" href="#home">LEO <span>ARAUJO</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"> <a class="nav-link active" href="#home">Home</a> </li>
+                    <li class="nav-item"> <a class="nav-link" href="#sobre">Sobre mim</a> </li>
+                    <li class="nav-item"> <a class="nav-link" href="#experiencia">Experiência</a> </li>
+                    <li class="nav-item"> <a class="nav-link" href="#projetos">Projetos</a> </li>
+                    <li class="nav-item"> <a class="nav-link" href="#contato">Contato</a> </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-	</nav>
+    <section id="home" class="home-section d-flex align-items-center justify-content-center text-white text-center">
+        <div class="container">
+            <h3>Olá, visitante! 👋</h3>
+            <h1 class="display-4 fw-bold">Meu nome é Leonardo</h1>
+            <p class="lead">
+                <span id="typed-output"></span>
+            </p>
+            <div class="mx-auto row col-md-3 d-flex align-items-center justify-content-center">
+                <div class="col-auto social-divider"></div>
+                <div class="col-auto social-icons">
+                    <a href="https://github.com/araujo-leo" class="social-link social-link-github" target="_blank"
+                        title="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/leonardoaraujofernandes/"
+                        class="social-link social-link-linkedin" target="_blank" title="LinkedIn"><i
+                            class="fab fa-linkedin-in"></i></a>
+                </div>
+                <div class="col-auto social-divider"></div>
+            </div>
+        </div>
+        <a href="#sobre" class="scroll-down">
+            <i class="fas fa-arrow-down"></i>
+        </a>
+    </section>
 
-	<section id="home" class="home-section d-flex align-items-center justify-content-center text-white text-center">
-		<div class="container">
-			<h3>Olá, visitante! 👋</h3>
-			<h1 class="display-4 fw-bold">Meu nome é Leonardo</h1>
-			<p class="lead">
-				<span id="typed-output"></span>
-			</p>
-			<div class="mx-auto row col-md-2 d-flex align-items-center justify-content-center">
-				<div class="col-auto social-divider"></div>
-				<div class="col-auto social-icons">
-					<a href="#" class="social-link"><i class="fab fa-instagram fa-1x"></i></a>
-					<a href="#" class="social-link"><i class="fab fa-github"></i></a>
-					<a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
-				</div>
-				<div class="col-auto social-divider"></div>
-			</div>
+    <section id="sobre" class="sobre bg-dark text-white">
+        <div class="container-fluid d-flex align-items-center justify-content-center">
+            <div class="img-box">
+                <img src="assets/images/avatar.webp" alt="Desenvolvedor" class="img-fluid">
+            </div>
+            <div class="text-box">
+                <h2 class="titulo">Sobre</h2>
+                <p class="descricao">
+                    Olá! Eu me chamo <strong>Leonardo</strong> e sou Desenvolvedor Backend com experiência em construção
+                    de sistemas eficientes e escaláveis.
+                </p>
+                <div class="tecnologias d-flex flex-wrap gap-2">
+                    <span class="badge badge-custom badge-php">PHP</span>
+                    <span class="badge badge-custom badge-mysql">MySQL</span>
+                    <span class="badge badge-custom badge-laravel">Laravel</span>
+                    <span class="badge badge-custom badge-api-rest">API REST</span>
+                    <span class="badge badge-custom badge-js">JavaScript</span>
+                    <span class="badge badge-custom badge-vuejs">Vue.js</span>
+                    <span class="badge badge-custom badge-docker">Docker</span>
+                    <span class="badge badge-custom badge-linux">Linux</span>
+                    <span class="badge badge-custom badge-git">Git</span>
+                </div>
+                <p class="descricao">
+                    Estou sempre em busca de novos desafios e oportunidades para aprimorar minhas habilidades. Se você
+                    tem um projeto interessante, entre em contato comigo!
+                </p>
+                <a href="assets/cv.pdf" class="btn btn-primary mt-3" download>Baixar CV</a>
+            </div>
+        </div>
+    </section>
 
-		</div>
-		<a href="#sobre" class="scroll-down">
-			<i class="fas fa-arrow-down"></i>
-		</a>
-	</section>
+    <section id="experiencia" class="py-5 bg-dark text-white">
+        <div class="container">
+            <h2 class="titulo text-center mb-5">Experiência <span class="text-white">&</span> Formação</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <h3 class="mb-4">Experiência Profissional</h3>
+                    <div class="timeline-column">
+                        <div class="timeline-item">
+                            <div class="timeline-content">
+                                <h5>Estágiario</h5>
+                                <p class="text-white mb-1">Agrofauna | Fev/2025 - Atualmente</p>
+                                <p>Atuação na manutenção e desenvolvimento de novas funcionalidades em sistemas Laravel
+                                    com Inertia.js. Utilização de Gitflow e containerização Docker.</p>
+                                <div class="d-flex flex-wrap gap-2 mt-2">
+                                    <span class="badge badge-custom badge-laravel">Laravel</span>
+                                    <span class="badge badge-custom badge-vuejs">Inertia.js</span>
+                                    <span class="badge badge-custom badge-git">Gitflow</span>
+                                    <span class="badge badge-custom badge-docker">Docker</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <h3 class="mb-4">Formação Acadêmica</h3>
+                    <div class="timeline-column">
+                        <div class="timeline-item">
+                            <div class="timeline-content">
+                                <h5>Técnico em informática para internet</h5>
+                                <p class="text-white mb-1">Instituto Federal de São Paulo | FEV/2022 - DEZ/2025</p>
+                                <p>Foco em lógica de programação, infraestrutura de rede, banco de dados e
+                                    desenvolvimento web.</p>
+                                <br>
+                                <div class="d-flex flex-wrap gap-2 mt-2">
+                                    <span class="badge badge-custom badge-php">PHP</span>
+                                    <span class="badge badge-custom badge-js">JavaScript</span>
+                                    <span class="badge badge-custom badge-mysql">MySQL</span>
+                                    <span class="badge badge-custom badge-docker">Jquery</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <section id="projetos" class="projetos py-5 bg-dark text-white">
+        <div class="container">
+            <h2 class="titulo text-center mb-5"> <span class="text-white">Meus</span> Projetos</h2>
+            <div class="row d-flex justify-content-center">
+                <div class="col-lg-4 col-md-6 mb-4 d-flex">
+                    <a href="https://buskasher.com.br" target="_blank" class="text-decoration-none text-white w-100">
+                        <div class="card project-card bg-dark border border-light h-100">
+                            <div class="card-header p-0 m-0"
+                                style="background-image: url('assets/images/plano-de-fundo-projeto-2.jpg');"></div>
+                            <div class="card-body d-flex flex-column">
+                                <div>
+                                    <h5 class="card-title">Buskasher: Buscador Kasher</h5>
+                                    <p class="card-text">Aplicação que centraliza produtos com certificação kosher do
+                                        Brasil. Utiliza crawlers, oferece um buscador.</p>
+                                </div>
+                                <div class="mt-5">
+                                    <span class="badge badge-custom badge-php">PHP</span>
+                                    <span class="badge badge-custom badge-mariadb">MariaDB</span>
+                                    <span class="badge badge-custom badge-concept">Crawler</span>
+                                    <span class="badge badge-custom badge-concept">Scrum</span>
+                                </div>
+                            </div>
+                            <div class="card-overlay">
+                                <div class="overlay-text"><i class="fas fa-eye me-2"></i> Visualizar Projeto</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4 d-flex">
+                    <a href="https://barber.codefive.com.br" target="_blank"
+                        class="text-decoration-none text-white w-100">
+                        <div class="card project-card bg-dark border border-light h-100">
+                            <div class="card-header p-0 m-0"
+                                style="background-image: url('assets/images/plano-de-fundo-projeto-1.jpg');"></div>
+                            <div class="card-body d-flex flex-column">
+                                <div>
+                                    <h5 class="card-title">WhatsApp Barber</h5>
+                                    <p class="card-text">Aplicação PWA para barbearias gerirem filas de espera via bot
+                                        no WhatsApp. Inclui painel de administração para gestão de contas.</p>
+                                </div>
+                                <div class="mt-auto">
+                                    <span class="badge badge-custom badge-react">React</span>
+                                    <span class="badge badge-custom badge-nodejs">Node.Js</span>
+                                    <span class="badge badge-custom badge-sqlite">SQLite</span>
+                                    <span class="badge badge-custom badge-docker">Docker</span>
+                                </div>
+                            </div>
+                            <div class="card-overlay">
+                                <div class="overlay-text"><i class="fas fa-eye me-2"></i> Visualizar Projeto</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
 
-	<section id="sobre" class="sobre bg-dark text-white">
-		<div class="container-fluid d-flex align-items-center justify-content-center ">
-			<div class="img-box">
-				<img src="assets/images/avatar.webp" alt="Desenvolvedor" class="img-fluid ">
-			</div>
+    <section id="contato" class="py-5 text-white">
+        <div class="container mt-5">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 col-md-10">
+                    <div class="text-center mb-5">
+                        <h2 class="titulo">Contato</h2>
+                        <p class="lead text-secondary">Tem uma ideia? Vamos conversar.</p>
+                    </div>
+                    <form id="contact-form" action="https://formsubmit.co/leoaraujofnd@gmail.com" method="post">
 
-			<div class="text-box">
-				<h2 class="titulo">Sobre</h2>
-				<p class="descricao">
-					Olá! Eu me chamo <strong>Leonardo</strong> e sou Desenvolvedor Backend com experiência em construção
-					de sistemas eficientes e escaláveis. Meu foco é desenvolver soluções robustas e seguras.
-				</p>
+                        <input type="hidden" name="_subject" value="Novo Contato do Portfólio!">
 
-				<div class="tecnologias d-flex flex-wrap gap-2">
-					<span class="badge bg-danger">HTML</span>
-					<span class="badge bg-info text-dark">CSS</span>
-					<span class="badge bg-warning text-dark">PHP</span>
-					<span class="badge bg-primary">MySQL</span>
-					<span class="badge bg-danger">Laravel</span>
-					<span class="badge bg-dark">API REST</span>
-					<span class="badge bg-info text-dark">JavaScript</span>
-				</div>
+                        <div class="mb-4">
+                            <label for="name" class="visually-hidden">Nome</label>
+                            <input type="text" class="form-control form-control-minimal" id="name" name="name"
+                                placeholder="Seu nome" required>
+                        </div>
 
-				<p class="descricao">
-					Estou sempre em busca de novos desafios e oportunidades para aprimorar minhas habilidades. Se você
-					tem um projeto interessante, entre em contato comigo!
-				</p>
+                        <div class="mb-4">
+                            <label for="email" class="visually-hidden">Email</label>
+                            <input type="email" class="form-control form-control-minimal" id="email" name="email"
+                                placeholder="Seu e-mail" required>
+                        </div>
 
-				<a href="assets/cv.pdf" class="btn btn-primary mt-3">Baixar CV</a>
-			</div>
-		</div>
-	</section>
+                        <div class="mb-4">
+                            <label for="message" class="visually-hidden">Mensagem</label>
+                            <textarea class="form-control form-control-minimal" id="message" name="message" rows="5"
+                                placeholder="Sua mensagem..." required></textarea>
+                        </div>
 
-	<section id="projetos" class="projetos py-5 bg-dark text-white ">
-		<div class="container">
-			<h2 class="titulo text-center mb-5 "> <span class="text-white">Meus</span> Projetos</h2>
-			<div class="row d-flex alignintems-center justify-content-center ">
-				<div class="col-md-3 mb-4">
-					<div class="card bg-dark border border-light rounded">
-						<div class="card-header p-0 m-0"
-							style="background-image: url('assets/images/plano-de-fundo-projeto-1.jpg');">
-						</div>
-						<div class="card-body">
-							<h5 class="card-title">Projeto 1</h5>
-							<p class="card-text">Descrição do projeto 1. Um breve resumo do que é, como funciona e suas
-								principais funcionalidades.</p>
-							<span class="badge bg-primary">HTML & CSS</span>
-							<span class="badge bg-warning text-dark">PHP</span>
-							<span class="badge bg-primary">MySQL</span>
-							<span class="badge bg-info text-dark">JavaScript</span>
+                        <div class="text-center mt-4">
+                            <button type="submit" class="btn btn-primary btn-minimal">Enviar</button>
+                        </div>
 
-						</div>
-					</div>
-				</div>
+                        <div id="form-status" class="text-center mt-3" style="min-height: 24px;"></div>
+                    </form>
 
-				<div class="col-md-3 mb-4">
-					<div class="card bg-dark border border-light rounded">
-						<div class="card-header p-0 m-0"
-							style="background-image: url('assets/images/plano-de-fundo-projeto-2.jpg');">
-						</div>
-						<div class="card-body">
-							<h5 class="card-title">Projeto 2</h5>
-							<p class="card-text">Descrição do projeto 2. Um breve resumo do que é, como funciona e suas
-								principais funcionalidades.</p>
-							<span class="badge bg-primary">HTML & CSS</span>
-							<span class="badge bg-warning text-dark">PHP</span>
-							<span class="badge bg-primary">MySQL</span>
-							<span class="badge bg-info text-dark">JavaScript</span>
+                    <div class="text-center mt-5">
+                        <div class="d-flex justify-content-center gap-4">
+                            <a href="mailto:leoaraujofnd@gmail.com" class="social-link-minimal social-link-email"
+                                title="Email"><i class="fas fa-envelope"></i></a>
+                            <a href="https://github.com/araujo-leo" target="_blank"
+                                class="social-link-minimal social-link-github" title="GitHub"><i
+                                    class="fab fa-github"></i></a>
+                            <a href="https://www.linkedin.com/in/leonardoaraujofernandes/" target="_blank"
+                                class="social-link-minimal social-link-linkedin" title="LinkedIn"><i
+                                    class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-						</div>
-					</div>
-				</div>
-
-				<div class="col-md-3 mb-4">
-					<div class="card bg-dark border border-light rounded">
-						<div class="card-header p-0 m-0"
-							style="background-image: url('assets/images/plano-de-fundo-projeto-3.jpg');">
-						</div>
-						<div class="card-body">
-							<h5 class="card-title">Projeto 3</h5>
-							<p class="card-text">Descrição do projeto 3. Um breve resumo do que é, como funciona e suas
-								principais funcionalidades.</p>
-							<span class="badge bg-primary">HTML & CSS</span>
-							<span class="badge bg-warning text-dark">PHP</span>
-							<span class="badge bg-primary">MySQL</span>
-							<span class="badge bg-info text-dark">JavaScript</span>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-
-
-
-
-	<section id="contato" class="section text-center text-white">
-		<div class="container">
-			<h2 class="mb-4 titulo">Contato</h2>
-			<p>Se você quiser entrar em contato, envie uma mensagem para o meu e-mail abaixo:</p>
-			<p><a href="mailto:leoaraujofnd@gmail.com" class="text-white">leoaraujofnd@gmail.com</a></p>
-			<form action="">
-				<div class="form-group mx-auto col-lg-4 mb-5">
-					<label for="name"></label>
-					<input type="text" class="form-control bg-dark border-dark  text-light" id="name" placeholder="Seu nome">
-					<label for="email"></label>
-					<input type="email" class="form-control bg-dark border-dark  text-light " id="email" placeholder="Seu e-mail">
-					<label for="message"></label>
-					<textarea class="form-control bg-dark border-dark  text-light" id="exampleFormControlTextarea1" rows="4" placeholder="Envie sua mensagem"></textarea>
-				</div>
-			</form>
-
-			<p>Ou me encontre nas redes sociais:</p>
-
-			<ul class="list-unstyled d-flex justify-content-center">
-
-				<li class="mx-3">
-					<a href="https://www.linkedin.com/in/leonardoaraujofernandes" target="_blank" class="text-white">
-						<i class="fab fa-instagram  social-link fa-3x	"></i>
-					</a>
-				</li>
-				<li class="mx-3">
-					<a href="https://www.linkedin.com/in/leonardoaraujofernandes" target="_blank" class="text-white">
-						<i class="fa-brands fa-linkedin social-link fa-3x"></i>
-					</a>
-				</li>
-				<li class="mx-3">
-					<a href="https://github.com/araujo-leo" target="_blank" class="text-white">
-						<i class="fa-brands fa-github social-link fa-3x"></i>
-					</a>
-				</li>
-			</ul>
-		</div>
-	</section>
-
-
-
-
-
-
-
-	<script src="vendor/typed/node_modules/typed.js/dist/typed.umd.js"></script>
+    <script src="vendor/typed/node_modules/typed.js/dist/typed.umd.js"></script>
     <script src="vendor/scrollreveal/node_modules/scrollreveal/dist/scrollreveal.min.js"></script>
-	<script src="vendor/bootstrap/js/bootstrap.bundle.js"></script>
-	<script src="assets/js/script.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
 
 </html>
-
-</body>

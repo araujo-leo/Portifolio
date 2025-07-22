@@ -104,7 +104,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     //Reveal Projetos
-    ScrollReveal().reveal('.card', {
+    ScrollReveal().reveal('.card, #experiencia>div', {
         duration: 1000,
         origin: 'bottom',
         distance: '50px',

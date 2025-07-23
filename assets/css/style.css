@@ -500,11 +500,6 @@ img {
 
 }
 
-@media (max-width: 768px) {
-    .scroll-down {
-        display: none;
-    }
-}
 
 @media (max-width: 576px) {
     #experiencia h2{

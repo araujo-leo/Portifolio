@@ -48,13 +48,15 @@ document.addEventListener("DOMContentLoaded", function () {
     sections.forEach((section, index) => {
         if (index < sections.length - 1) {
             const nextSectionId = sections[index + 1].id;
+            if (window.innerWidth >= 768) {
 
-            const scrollBtn = document.createElement("a");
-            scrollBtn.href = `#${nextSectionId}`;
-            scrollBtn.className = "scroll-down";
-            scrollBtn.innerHTML = `<i class="fas fa-arrow-down"></i>`;
+                const scrollBtn = document.createElement("a");
+                scrollBtn.href = `#${nextSectionId}`;
+                scrollBtn.className = "scroll-down";
+                scrollBtn.innerHTML = `<i class="fas fa-arrow-down"></i>`;
 
-            section.appendChild(scrollBtn);
+                section.appendChild(scrollBtn);
+            }
         }
     });
 

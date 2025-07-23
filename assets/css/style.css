@@ -88,7 +88,7 @@ body {
 }
 
 .brand span {
-    color: #b0c7e4 !important;
+    color: oklch(82.194% 0.04811 254.353) !important;
 }
 
 .navbar.hidden {
@@ -189,18 +189,57 @@ body {
 
 .scroll-down {
     position: absolute;
-    bottom: 50px;
+    bottom: 20px;
     left: 50%;
+    width: 100px;
     transform: translateX(-50%);
-    font-size: 30px;
-    color: white;
+    color: #fff;
+    font-size: 24px;
     text-decoration: none;
-    transition: transform 0.3s ease, color 0.3s;
+    animation: bounce 2s infinite;
+    z-index: 10;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+@keyframes bounce {
+    0%, 100% { transform: translate(-50%, 0); }
+    50% { transform: translate(-50%, 10px); }
+}
+
+section {
+    position: relative;
 }
 
 .scroll-down:hover {
-    transform: translateX(-50%) translateY(5px);
+    transform: translateX(-50%) scale(3);
     color: #00aced;
+}
+
+.fa-arrow-up {
+    color: #fff;
+}
+
+.back-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: #B0C7E4;
+    color: white;
+    font-size: 20px;
+    padding: 12px 14px;
+    border-radius: 50%;
+    text-align: center;
+    text-decoration: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    z-index: 1000;
+}
+
+.back-to-top:hover {
+    transform: scale(1.1);
+    background-color: #B0C7E4;
 }
 
 .container {

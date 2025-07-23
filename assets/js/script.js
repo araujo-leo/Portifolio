@@ -45,6 +45,31 @@ document.addEventListener("DOMContentLoaded", function () {
         loop: true,
     };
 
+    sections.forEach((section, index) => {
+        if (index < sections.length - 1) {
+            const nextSectionId = sections[index + 1].id;
+
+            const scrollBtn = document.createElement("a");
+            scrollBtn.href = `#${nextSectionId}`;
+            scrollBtn.className = "scroll-down";
+            scrollBtn.innerHTML = `<i class="fas fa-arrow-down"></i>`;
+
+            section.appendChild(scrollBtn);
+        }
+    });
+
+    const backToTopBtn = document.querySelector('.back-to-top');
+
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 500) {
+            backToTopBtn.style.opacity = '1';
+            backToTopBtn.style.pointerEvents = 'auto';
+        } else {
+            backToTopBtn.style.opacity = '0';
+            backToTopBtn.style.pointerEvents = 'none';
+        }
+    });
+
     var typed = new Typed("#typed-output", options);
 
     const contactForm = document.getElementById('contact-form');
@@ -57,8 +82,8 @@ document.addEventListener("DOMContentLoaded", function () {
             const form = e.target;
             const formData = new FormData(form);
 
-            formData.append('_captcha', 'false'); 
-            formData.append('_template', 'table'); 
+            formData.append('_captcha', 'false');
+            formData.append('_template', 'table');
             formData.append('_next', window.location.href);
 
             formStatus.innerHTML = '<p class="text-info">Enviando...</p>';
@@ -67,7 +92,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 method: 'POST',
                 body: formData,
                 headers: {
-                    'Accept': 'application/json' 
+                    'Accept': 'application/json'
                 }
             })
                 .then(response => {

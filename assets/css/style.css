@@ -497,6 +497,13 @@ img {
     font-size: 24px;
 
 
+
+}
+
+@media (max-width: 768px) {
+    .scroll-down {
+        display: none;
+    }
 }
 
 @media (max-width: 576px) {

@@ -74,6 +74,18 @@ body {
     background-color: #4B5563;
 }
 
+.badge-fluig {
+    background-color: #FF8000;
+}
+
+.badge-jquery {
+    background-color: #0769AD;
+}
+
+.badge-bootstrap {
+    background-color: #7952B3;
+}
+
 .navbar {
     background-color: #343a40;
     opacity: 0;
